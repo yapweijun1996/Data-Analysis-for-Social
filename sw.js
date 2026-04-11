@@ -1,11 +1,11 @@
-const CACHE_NAME = 'metik-v1';
+const CACHE_NAME = 'metik-v2';
 const PRECACHE = ['./', './index.html', './favicon.svg', './manifest.json'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE))
   );
-  self.skipWaiting();
+  // Don't skipWaiting here — let the app control when to activate
 });
 
 self.addEventListener('activate', (e) => {
@@ -28,4 +28,11 @@ self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then((cached) => cached || fetch(e.request))
   );
+});
+
+// Listen for skipWaiting message from the app
+self.addEventListener('message', (e) => {
+  if (e.data === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
