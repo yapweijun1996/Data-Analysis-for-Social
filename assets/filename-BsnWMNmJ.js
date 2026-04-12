@@ -1,0 +1,1 @@
+function e(e){let t=new Date,n=`${t.getFullYear()}${String(t.getMonth()+1).padStart(2,`0`)}${String(t.getDate()).padStart(2,`0`)}`,r=e=>(e||``).toLowerCase().replace(/[^a-z0-9]+/g,`_`).replace(/^_+|_+$/g,``).slice(0,40);return`${[`metik`,r(e.page),r(e.name),n].filter(Boolean).join(`_`)}.${e.ext.replace(/^\./,``)}`}export{e as t};
