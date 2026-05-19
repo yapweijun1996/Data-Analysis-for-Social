@@ -1,0 +1,1 @@
+var e=`tt_campaign`,t=`tt_adgroup`,n=`tt_ads`,r=`meta_campaign`,i=`meta_adset`,a=`meta_ads`,o=`Meta_NM_Organic_Overview_Insigh`,s=`Meta_NM_Organic_Posts_Insights`,c=`Tik_Tok_NM_Organic_Overview_Ins`,l=`Tik_Tok_NM_Organic_Posts_Insigh`,u=[e,t,n],d=[r,i,a],f=[o,s,c,l];[...u,...d,...f];export{s as a,e as c,o as i,c as l,i as n,t as o,r,n as s,a as t,l as u};

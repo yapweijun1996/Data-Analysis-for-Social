@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DseTPa7n.js";import{c as t,o as n,r,s as i,t as a}from"./constants-DWB3mOp4.js";var o=e({resolveMetaTable:()=>c,resolveTikTokTable:()=>s});function s(e){return e.includes(`tt_campaign`)?t:e.includes(`tt_adgroup`)?n:e.includes(`tt_ads`)?i:null}function c(e){return e.includes(`meta_campaign`)?r:e.includes(`meta_ads`)?a:null}export{c as n,s as r,o as t};
