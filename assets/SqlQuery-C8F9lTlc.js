@@ -1,4 +1,4 @@
-import{i as e}from"./chunk-DseTPa7n.js";import{n as t,t as n}from"./jsx-runtime-C6D02mtk.js";import{d as r,g as i}from"./db-BlXCa8V5.js";import{n as a,t as o}from"./ui-SR6OMZzQ.js";import{t as s}from"./TabulatorTable-BACifRIi.js";var c=e(t(),1),l=n(),u=`metik-sql-history`,d=20,f=[{label:`Top 10 TikTok campaigns by spend`,sql:`SELECT "Campaign name", SUM(TRY_CAST(NULLIF("Cost", '') AS DOUBLE)) AS spend
+import{i as e}from"./chunk-DseTPa7n.js";import{n as t,t as n}from"./jsx-runtime-C6D02mtk.js";import{d as r,g as i}from"./db-H5H8cxcx.js";import{n as a,t as o}from"./ui-SR6OMZzQ.js";import{t as s}from"./TabulatorTable-BACifRIi.js";var c=e(t(),1),l=n(),u=`metik-sql-history`,d=20,f=[{label:`Top 10 TikTok campaigns by spend`,sql:`SELECT "Campaign name", SUM(TRY_CAST(NULLIF("Cost", '') AS DOUBLE)) AS spend
 FROM "tt_campaign"
 GROUP BY "Campaign name"
 ORDER BY spend DESC NULLS LAST
